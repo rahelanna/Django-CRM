@@ -4,14 +4,14 @@ from django import forms
 
 
 class SignUpForm(UserCreationForm):
-    email = forms.EmailField(Label="", widget=forms.TextInput(attrs=
+    email = forms.EmailField(label="", widget=forms.TextInput(attrs=
                                  {'class': 'form-control',
                                  'placeholder': 'email address'}))
-    first_name = forms.CharField(Label="", max_length=100,
+    first_name = forms.CharField(label="", max_length=100,
                                  widget=forms.TextInput(attrs=
                                  {'class': 'form-control',
                                  'placeholder': 'first name'}))
-    last_name = forms.CharField(Label="", max_length=100,
+    last_name = forms.CharField(label="", max_length=100,
                                 widget=forms.TextInput(attrs=
                                 {'class': 'form-control',
                                 'placeholder': 'last name'}))
